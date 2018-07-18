@@ -1,5 +1,5 @@
-# Apuntadores en C  
-  
+# Apuntadores en C
+---    
 ![Puntero](https://wiki.dcc.uchile.cl/cc3301/_media/puntero.png)
   
 <a href="https://es.wikipedia.org/wiki/Puntero_(inform%C3%A1tica)" target="_blank">Punteros</a>
@@ -13,6 +13,7 @@ En este sentido, una variable se refiere directamente a un valor y un apuntador 
 El hecho de referirse a un valor especifico a través de un apuntador sin hacer referencia a la variable que lo contiene, es llamado [indirección](https://es.wikipedia.org/wiki/Indirecci%C3%B3n).  
 
 # Referencias
+---  
 
 Apuntadores. Definición. Disponible en:  
 http://www.utm.mx/~mgarcia/PE7(Apuntadores).pdf
