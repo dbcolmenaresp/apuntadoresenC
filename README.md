@@ -8,7 +8,7 @@ Los apuntadores contienen direcciones de memoria como sus valores.
 Generalmente una variable contiene un valor especifico.  
 Un apuntador contiene la dirección de memoria de una variable que contiene un valor específico.  
 En este sentido, una variable se refiere directamente a un valor y un apuntador se refiere a un valor indirectamente.  
-El hecho de referirse a un valor a traves de un apuntador es llamado indireccion.  
+El hecho de referirse a un valor especifico a través de un apuntador sin hacer referencia a la variable que lo contiene, es llamado [indirección](https://es.wikipedia.org/wiki/Indirecci%C3%B3n).  
 
 # Referencias
 
