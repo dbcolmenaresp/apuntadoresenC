@@ -1,6 +1,6 @@
 # Apuntadores en C  
 
-Los apuntadores son una de las mas poderosas caracteristicas del lenguaje de programacion C, ademas es una de las mas dificiles de manejar.  
+Los apuntadores (tambien conocidos como [punteros](https://es.wikipedia.org/wiki/Puntero_(inform%C3%A1tica))) son una de las mas poderosas caracteristicas del lenguaje de programacion C, ademas es una de las mas dificiles de manejar.  
 Los apuntadores brindan la posibilidad de crear y manipular estructuras de datos dinamicas, aquellas que pueden crecer y reducirse, tales como listas enlazadas, pilas, colas y arboles, ademas de tener una estrecha relacion con los arreglos y las cadenas de caracteres o string.  
 Los apuntadores contienen direcciones de memoria como sus valores.  
 Generalmente una variable contiene un valor especifico.  
