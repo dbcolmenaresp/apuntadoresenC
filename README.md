@@ -14,18 +14,18 @@ El hecho de referirse a un valor especifico a través de un apuntador sin hacer 
 
 Los apuntadores, al igual que otras variables, deben ser declarados antes de ser usados.  
 
-`int *countPtr, count;  
-count = 7;`  
+`int *countPtr, count;`  
+`count = 7;`  
 
 Al declarar y asignar los valores correspondientes, la estructura de datos queda como se indica a continuacion:
 
-count                count referencia directamente una variable cuyo valor es 7.  
+*count*                count referencia directamente una variable cuyo valor es 7.  
   7  
 
-countPtr    count    countPtr referencia indirectamente una variable cuyo valor es 7  
-    --------> 7
+*countPtr*    *count*    countPtr referencia indirectamente una variable cuyo valor es 7  
+    -------->    7
 
-Declara la variable countPtr como un apuntdor a un valor de tipo entero, ademas la variable count es declarada para ser una variable de tipo entero.
+Declara la variable *countPtr* como un apuntdor a un valor de tipo entero, además la variable *count* es declarada para ser una variable de tipo entero.
 
 Toda variable que sea declarada como un apuntador debe estar precedida por el simbolo asterisco (*).
 
@@ -33,7 +33,7 @@ La siguiente declaracion de variables:
 
 `double *xPtr, *yPtr;`
 
-Indica que ambas variables, xPtr y yPtr son apuntadores a valores de tipo double.
+Indica que ambas variables, *xPtr* y *yPtr* son apuntadores a valores de tipo double.
 
 Los apuntadores pueden ser declarados para apuntar a objetos de cualquier tipo de datos.
 
@@ -47,49 +47,50 @@ Se debe inicializar los apuntadores para evita que apunten a zonas desconocidas 
 
 ## Utilizando los apuntadores:
 
-El operador unario & es llamado el operador de direccion y devuelve la direccion de un operando.
+El operador unario *&* es llamado el operador de direccion y devuelve la direccion de un operando.
 
 Por ejemplo, a continuacion se cedlara una variable entera y un apuntador a entero.
 
-`int y = 5;
-int *yPtr;`
+`int y = 5;`
+`int *yPtr;`
 
-La siguiente sentencia asigna la direccion de la variable y al apuntador yPtr
+La siguiente sentencia asigna la direccion de la variable *y* al apuntador *yPtr*
 
 `yPtr = &y;`
 
-Luego de la ejecucion de esta sentencia se dice que el apuntador yPtr apunta a la direccion de la variable y.
+Luego de la ejecucion de esta sentencia se dice que el apuntador *yPtr* apunta a la direccion de la variable *y*.
 
 A continuacion se muestra una representacion esquemática de la memoria despues de la asignacion anterior:
 
-yPtr      y  
---------> 5
+*yPtr*      *y*  
+-------->    5
 
 En la figura se mestra la relacion del apuntador a través de una flecha del apuntador hacia el objetivo que este apuntando.
 
-La siguiente figura muestra la representacion del puntero en memoria, asumiendo que la variable entera y este almacenada en la direccion de memoria 6000 y la variable de tipo apuntador yPtr esta almacenada en la direccion 5000.
+La siguiente figura muestra la representacion del puntero en memoria, asumiendo que la variable entera *y* este almacenada en la dirección de memoria 6000 y la variable de tipo apuntador *yPtr* esta almacenada en la direccion 5000.
 
-El opreador de direccion solo puede ser aplicado a un elemento que tenga un valor asignado directamente, tal como el nombre de una variable.
+El opreador de dirección solo puede ser aplicado a un elemento que tenga un valor asignado directamente, tal como el nombre de una variable.
 El operador de direccion no puede ser aplicado a constantes o expresiones
 
-     yPtr           y
-5000 6000      6000 5
+     *yPtr*           *y*
+5000  6000       6000  5
 
 El operador asterisco (*) comunmente conocido como operador de indireccion, devuelve un alias del elemento al cual apunta, por ejemplo la siguiente sentencia:
 
 `cout  <<  *yPtr << endl;`
 
-Muestra el valor de la variable y, el numero entero 5, similas a como lo haria la siguiente sentencia:
+Muestra el valor de la variable *y*, el numero entero *5*, similas a como lo haria la siguiente sentencia:
 
-`*yPtr;
-cin >>*yPtr;`
+`*yPtr;`
+`cin >>*yPtr;`
 
 A continuacion se muestra un programa que opera con apuntadores en lenguaje C++
 
 Primeramente se importa el archivo de cabecera necesario para usar las sentencias de entrada y salida de informacion
-`#include <iostream>
-using std::cout;
-using std::endl;`
+
+`#include <iostream>`
+`using std::cout;`
+`using std::endl;`
 
 Luego se define el inicio de la funcion principal:
 
@@ -97,22 +98,25 @@ Luego se define el inicio de la funcion principal:
 
 A continuacion se declaran variables a usar
 
-`ìnt a;    //a es una variable de tipo entero
-int *aPtr; //aPtr es un apuntador a un entero`
+`ìnt a;    //a es una variable de tipo entero`
+`int *aPtr; //aPtr es un apuntador a un entero`
 
 Se asignan los valores correspondientes a las variables declaradas:
 
-`a = 7;    //se le asigna a la variable a el valor entero 7
-aPtr = &a; //al apuntador aPtr se le asigna la direccion de la variable a`
+`a = 7;    //se le asigna a la variable a el valor entero 7`
+`aPtr = &a; //al apuntador aPtr se le asigna la direccion de la variable a`
 
 A continuacion se muestran en pantalla los valores asignados a las diferentes variables:
 
-`cout <<  "La direccion de la variable a es " << &a << endl;
-cout <<  "El valor de aPtr es " << aPtr << endl;
-cout <<  "El valor de la variable a es " << a << endl;
-cout <<  "El valor de *aPtr es " << *aPtr << endl;
-cout <<  "&*aPtr = " << &*aPtr << endl;
-cout <<  "*&aPtr = " << *&aPtr << endl;`
+`cout <<  "La direccion de la variable a es " << &a << endl;`
+`cout <<  "El valor de aPtr es " << aPtr << endl;`
+`cout <<  "El valor de la variable a es " << a << endl;`
+`cout <<  "El valor de *aPtr es " << *aPtr << endl;`
+`cout <<  "&*aPtr = " << &*aPtr << endl;`
+`cout <<  "*&aPtr = " << *&aPtr << endl;`
+
+Note que al ejecutar el codigo indicado, el valor de la direccion de la variable entera *a* es identico al valor contenido en la varialbe *aPtr.
+Los operadores *&* (operador de direccion) y * (operador de apuntador) son operadores inversos, por lo tanto aplicarlos en cualquier orden genera el mismo resultado.
 
 # Referencias
 ---  
