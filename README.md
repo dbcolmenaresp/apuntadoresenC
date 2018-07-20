@@ -14,8 +14,8 @@ El hecho de referirse a un valor especifico a través de un apuntador sin hacer 
 
 Los apuntadores, al igual que otras variables, deben ser declarados antes de ser usados.  
 
-int *countPtr, count;  
-count = 7;  
+`int *countPtr, count;  
+count = 7;`  
 
 Al declarar y asignar los valores correspondientes, la estructura de datos queda como se indica a continuacion:
 
@@ -31,7 +31,7 @@ Toda variable que sea declarada como un apuntador debe estar precedida por el si
 
 La siguiente declaracion de variables:
 
-double *xPtr, *yPtr;
+`double *xPtr, *yPtr;`
 
 Indica que ambas variables, xPtr y yPtr son apuntadores a valores de tipo double.
 
@@ -42,6 +42,69 @@ Un apuntador con el valor 0 (cero) o NULL apunta a ningun lado, en C++ se usa pr
 La constante simbolica NULL es definida en el archivo de cabecera iostream.
 Cuando se asigna 0 a un apuntador, este se convierte a un apuntador del tipo apropiado.
 El valor de 0 es el unico valor entero que puede ser asignado a un apuntador sin hacer casting de entero a apuntador primero.
+Se debe preceder el simbolo asterisco (*) a todas las variables de tipo apuntador, aunque se declaren en una misma linea separada por comas.
+Se debe inicializar los apuntadores para evita que apunten a zonas desconocidas de memoria.
+
+## Utilizando los apuntadores:
+
+El operador unario & es llamado el operador de direccion y devuelve la direccion de un operando.
+
+Por ejemplo, a continuacion se cedlara una variable entera y un apuntador a entero.
+
+`int y = 5;
+int *yPtr;`
+
+La siguiente sentencia asigna la direccion de la variable y al apuntador yPtr
+
+`yPtr = &y;`
+
+Luego de la ejecucion de esta sentencia se dice que el apuntador yPtr apunta a la direccion de la variable y.
+
+A continuacion se muestra una representacion esquemática de la memoria despues de la asignacion anterior:
+
+yPtr      y  
+--------> 5
+
+En la figura se mestra la relacion del apuntador a través de una flecha del apuntador hacia el objetivo que este apuntando.
+
+La siguiente figura muestra la representacion del puntero en memoria, asumiendo que la variable entera y este almacenada en la direccion de memoria 6000 y la variable de tipo apuntador yPtr esta almacenada en la direccion 5000.
+
+El opreador de direccion solo puede ser aplicado a un elemento que tenga un valor asignado directamente, tal como el nombre de una variable.
+El operador de direccion no puede ser aplicado a constantes o expresiones
+
+     yPtr           y
+5000 6000      6000 5
+
+El operador asterisco (*) comunmente conocido como operador de indireccion, devuelve un alias del elemento al cual apunta, por ejemplo la siguiente sentencia:
+
+`cout  <<  *yPtr << endl;`
+
+Muestra el valor de la variable y, el numero entero 5, similas a como lo haria la siguiente sentencia:
+
+`*yPtr;
+cin >>*yPtr;`
+
+A continuacion se muestra un programa que opera con apuntadores en lenguaje C++
+
+Primeramente se importa el archivo de cabecera necesario para usar las sentencias de entrada y salida de informacion
+`#include <iostream>
+using std::cout;
+using std::endl;`
+
+Luego se define el inicio de la funcion principal:
+
+`int main()`
+
+A continuacion se declaran variables a usar
+
+`ìnt a;    //a es una variable de tipo entero
+int *aPtr; //aPtr es un apuntador a un entero`
+
+Se asignan los valores correspondientes a las variables declaradas:
+
+`a = 7;    //se le asigna a la variable a el valor entero 7
+aPtr = &a; //al apuntador aPtr se le asigna la direccion de la variable a`
+
 
 
 # Referencias
