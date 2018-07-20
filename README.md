@@ -105,7 +105,14 @@ Se asignan los valores correspondientes a las variables declaradas:
 `a = 7;    //se le asigna a la variable a el valor entero 7
 aPtr = &a; //al apuntador aPtr se le asigna la direccion de la variable a`
 
+A continuacion se muestran en pantalla los valores asignados a las diferentes variables:
 
+`cout <<  "La direccion de la variable a es " << &a << endl;
+cout <<  "El valor de aPtr es " << aPtr << endl;
+cout <<  "El valor de la variable a es " << a << endl;
+cout <<  "El valor de *aPtr es " << *aPtr << endl;
+cout <<  "&*aPtr = " << &*aPtr << endl;
+cout <<  "*&aPtr = " << *&aPtr << endl;`
 
 # Referencias
 ---  
