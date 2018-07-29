@@ -28,16 +28,16 @@ int main(){		//Inicio de la funcion principal
 	cout << "Programa realizado por Ing. Danny Colmenares\n";
 	cout << "Contacto twitter @dbcolmenaresp\n";
 		
-	//Se mustra en pantalla el valor de la direccion de la variable entera a
+	//Se muestra en pantalla el valor de la direccion de la variable entera a
 	cout << "\nLa direccion de la variable entera a es " << &a << endl;
 	
-	//Se mustra en pantalla el valor que contiene el aputnador aPtr
+	//Se muestra en pantalla el valor que contiene el aputnador aPtr
 	cout << "\nEl valor contenido en la variable aPtr es " << aPtr << endl;
 	
-	//Se mustra en pantalla el valor de la variable a
+	//Se muestra en pantalla el valor de la variable a
 	cout << "\nEl valor de la variable entea a es " << a << endl;
 	
-	//Se mustra en pantalla el valor apuntado indirectamene por *aPtr
+	//Se muestra en pantalla el valor apuntado indirectamene por *aPtr
 	cout << "\nEl valor apuntado por *aPtr es " << *aPtr << endl;
 	
 	//Los operadores de direccion & y de apuntador * son operadores inversos
