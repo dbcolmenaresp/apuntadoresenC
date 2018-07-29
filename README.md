@@ -135,3 +135,6 @@ Introducción a punteros. Video disponible en:
 
 Como usar correctamente los apuntadores. Video disponible en:  
 [![Video Como usar correctamente los apuntadores](https://img.youtube.com/vi/OgX4vdtkkHQ/0.jpg)](https://www.youtube.com/watch?v=OgX4vdtkkHQ)
+
+Manejo de punteros en C
+[![Manejo de punteros en C](https://img.youtube.com/vi/Kr5bbqNVGYQ/0.jpg)](https://www.youtube.com/watch?v=Kr5bbqNVGYQ)
