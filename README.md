@@ -129,3 +129,9 @@ http://www.utm.mx/~mgarcia/PE7(Apuntadores).pdf
 
 Apuntadores en C y C++. Disponible en:  
 https://utch2009.files.wordpress.com/2010/04/apuntadores.pdf
+
+Introduccion a punteros. Video disponible en:  
+https://www.youtube.com/watch?v=4IabpaIObzM
+
+Como usar correctamente los apuntadores. Video disponible en:  
+https://www.youtube.com/watch?v=OgX4vdtkkHQ
