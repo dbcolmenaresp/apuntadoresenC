@@ -32,29 +32,52 @@ int main(){				//Inicio de la funcion principal
 		
 	//Se muestra en pantalla el valor y la direccion de la variable entera j
 	cout << "\nEl valor de j es " << j << " y esta almacenado en la direccion " << &j << endl;
+	cout << "\n    Direccion de j     Valor" << endl;
+	cout << "                      almacenado" << endl;
+	cout << "\n     " << &j << "          " << j << endl;
+	cout << "-----------------------------" << endl;
+
 
 	//Se muestra en pantalla el valor y la direccion de la variable entera k
 	cout << "\nEl valor de k es " << k << " y esta almacenado en la direccion " << &k << endl;
-
+	cout << "\n    Direccion de k     Valor" << endl;
+	cout << "                      almacenado" << endl;
+	cout << "\n     " << &k << "          " << k << endl;
+	cout << "-----------------------------" << endl;
+	
 	//Se muestra en pantalla el valor que contiene el apuntador Ptr
 	cout << "\nEl valor contenido en la variable Ptr es " << Ptr << endl;
+	cout << "\n    Direccion de Ptr     Valor" << endl;
+	cout << "                      almacenado" << endl;
+	cout << "\n     " << &Ptr << "          " << Ptr << endl;
+	cout << "-----------------------------" << endl;
 
 	//Se muestra en pantalla el valor apuntado indirectamene por *Ptr
 	cout << "\nEl valor apuntado por *Ptr es " << *Ptr << endl;
-	
+	cout << "\n      *Ptr    ----->  " << *Ptr << endl;
+	cout << "-----------------------------" << endl;
+
 	//Se le asigna a la variable apuntada por *Ptr el valor de 10
 	*Ptr = 10;
 	cout << "\nSe le asigna a *Ptr el valor de " << *Ptr << endl;
-	
-	//Se muestra el nuevo valor apuntado por *Ptr
+	cout << "\n      *Ptr    <----   " << *Ptr << endl;
+	cout << "-----------------------------" << endl;
+
+	//Se muestra el nuevo valor de j apuntado por *Ptr
 	cout << "\nEl nuevo valor de j es " << j << endl;
+	cout << "\n      *Ptr    ---->  j = " << *Ptr << endl;
+	cout << "-----------------------------" << endl;
 
 	//Se modifica el valor de la variable k
 	j = 20;
 	cout << "\nSe le asigna a j el valor de " << j << endl;
+	cout << "\n      j    <----   " << *Ptr << endl;
+	cout << "-----------------------------" << endl;
 	
 	//Se muestra el nuevo valor de la variable apuntada por *Ptr
-	cout << "\nEl nuevo valor de *Ptr es " << *Ptr << endl;
+	cout << "\nEl nuevo valor de j es " << j << endl;
+	cout << "\n      *Ptr    ---->  j = " << j << endl;
+	cout << "-----------------------------" << endl;
 
 	//Los operadores de direccion & y de apuntador * son operadores inversos
 	cout << "\n&*Ptr = " << &*Ptr << endl;
