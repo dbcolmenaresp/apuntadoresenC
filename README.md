@@ -139,6 +139,9 @@ http://www.utm.mx/~mgarcia/PE7(Apuntadores).pdf
 Apuntadores en C y C++. Disponible en:  
 https://utch2009.files.wordpress.com/2010/04/apuntadores.pdf
 
+Como programar C++ Deitel
+https://www.freelibros.org/programacion/como-programar-c-plus-plus-9na-edicion-paul-deitel
+
 Introducción a punteros. Video disponible en:  
 [![Video de Introducción a punteros](https://img.youtube.com/vi/4IabpaIObzM/0.jpg)](https://www.youtube.com/watch?v=4IabpaIObzM)
 
