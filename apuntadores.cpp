@@ -23,23 +23,23 @@ int main(){		//Inicio de la funcion principal
 	aPtr = &a;		//Se le asigna al apuntador aPtr el valor de la direccion de la variable entera a
 
 	//Presentacion
-	cout << "Programa realizado para realizar la suma de dos numeros enteros \n";
+	cout << "Programa realizado para intoducir el concepto de apuntadores\n";
 	cout << "Programa realizado con fines educativos\n";
 	cout << "Programa realizado por Ing. Danny Colmenares\n";
 	cout << "Contacto twitter @dbcolmenaresp\n";
 		
 	//Se muestra en pantalla el valor de la direccion de la variable entera a
 	cout << "\nLa direccion de la variable entera a es " << &a << endl;
-	
-	//Se muestra en pantalla el valor que contiene el aputnador aPtr
+
+	//Se muestra en pantalla el valor que contiene el apuntador aPtr
 	cout << "\nEl valor contenido en la variable aPtr es " << aPtr << endl;
-	
+
 	//Se muestra en pantalla el valor de la variable a
-	cout << "\nEl valor de la variable entea a es " << a << endl;
-	
+	cout << "\nEl valor de la variable entera a es " << a << endl;
+
 	//Se muestra en pantalla el valor apuntado indirectamene por *aPtr
 	cout << "\nEl valor apuntado por *aPtr es " << *aPtr << endl;
-	
+
 	//Los operadores de direccion & y de apuntador * son operadores inversos
 	cout << "\n&*aPtr = " << &*aPtr << endl;
 	cout << "\n*&aPtr  = " << *&aPtr << endl;
