@@ -24,8 +24,9 @@ Al declarar y asignar los valores correspondientes, la estructura de datos queda
 *count*                count referencia directamente una variable cuyo valor es 7.  
   7  
 
-*countPtr*    *count*    countPtr referencia indirectamente una variable cuyo valor es 7  
-    -------->    7
+*countPtr*    | *count*    countPtr referencia indirectamente una variable cuyo valor es 7  
+-------------------------
+    --------> |   7  
 
 Declara la variable *countPtr* como un apuntdor a un valor de tipo entero, además la variable *count* es declarada para ser una variable de tipo entero.
 
@@ -80,8 +81,13 @@ La siguiente figura muestra la representacion del puntero en memoria, asumiendo 
 El opreador de dirección solo puede ser aplicado a un elemento que tenga un valor asignado directamente, tal como el nombre de una variable.
 El operador de direccion no puede ser aplicado a constantes o expresiones
 
-     *yPtr*           *y*
-5000  6000       6000  5
+     | *yPtr*           
+---------------
+5000 |  6000       
+
+     | *y*
+---------------
+6000 | 5
 
 El operador asterisco (*) comunmente conocido como operador de indireccion, devuelve un alias del elemento al cual apunta, por ejemplo la siguiente sentencia:
 
