@@ -1,5 +1,5 @@
 # Apuntadores en C
----    
+
 ![Puntero](https://wiki.dcc.uchile.cl/cc3301/_media/puntero.png)
   
 <a href="https://es.wikipedia.org/wiki/Puntero_(inform%C3%A1tica)" target="_blank">Punteros</a>
@@ -15,22 +15,23 @@ El hecho de referirse a un valor especifico a través de un apuntador sin hacer 
 Los apuntadores, al igual que otras variables, deben ser declarados antes de ser usados.  
 
 ```cpp
-int *countPtr, count;  
-count = 7;
+int *countPtr;  // Se declara un apuntador a una variable con valor entero
+int count;      // Se declara una variable con valor entero
+count = 7;      // Se asigna un valor entero a la variable entera count
 ```  
+
+Declara la variable `*countPtr` como un apuntdor a una variable de tipo entero, además la variable `count` es declarada para ser una variable de tipo entero.
+
+Toda variable que sea declarada como un apuntador debe estar precedida por el simbolo asterisco (*).
 
 Al declarar y asignar los valores correspondientes, la estructura de datos queda como se indica a continuacion:
 
-*count*                count referencia directamente una variable cuyo valor es 7.  
+count                `count` referencia directamente una variable cuyo valor es 7.  
   7  
 
-*countPtr*    | *count*    countPtr referencia indirectamente una variable cuyo valor es 7  
--------------------------
-    --------> |   7  
+*countPtr     count    `*countPtr` referencia indirectamente una variable cuyo valor es 7  
 
-Declara la variable *countPtr* como un apuntdor a un valor de tipo entero, además la variable *count* es declarada para ser una variable de tipo entero.
-
-Toda variable que sea declarada como un apuntador debe estar precedida por el simbolo asterisco (*).
+-------->       7  
 
 La siguiente declaracion de variables:
 
