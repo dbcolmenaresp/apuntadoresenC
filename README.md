@@ -14,8 +14,10 @@ El hecho de referirse a un valor especifico a través de un apuntador sin hacer 
 
 Los apuntadores, al igual que otras variables, deben ser declarados antes de ser usados.  
 
-`int *countPtr, count;`  
-`count = 7;`  
+```cpp
+int *countPtr, count;  
+count = 7;
+```  
 
 Al declarar y asignar los valores correspondientes, la estructura de datos queda como se indica a continuacion:
 
@@ -31,9 +33,11 @@ Toda variable que sea declarada como un apuntador debe estar precedida por el si
 
 La siguiente declaracion de variables:
 
-`double *xPtr, *yPtr;`  
+```cpp
+double *xPtr, *yPtr;
+```  
 
-Indica que ambas variables, *xPtr* y *yPtr* son apuntadores a valores de tipo double.
+Indica que ambas variables, `*xPtr*` y `*yPtr*` son apuntadores a valores de tipo double.
 
 Los apuntadores pueden ser declarados para apuntar a objetos de cualquier tipo de datos.
 
@@ -46,18 +50,21 @@ Se debe preceder el simbolo asterisco (*) a todas las variables de tipo apuntado
 Se debe inicializar los apuntadores para evita que apunten a zonas desconocidas de memoria.
 
 ## Utilizando los apuntadores:
----
 
 El operador unario *&* es llamado el operador de direccion y devuelve la direccion de un operando.
 
 Por ejemplo, a continuacion se cedlara una variable entera y un apuntador a entero.
 
-`int y = 5;`  
-`int *yPtr;`  
+```cpp
+int y = 5;  
+int *yPtr;
+```  
 
 La siguiente sentencia asigna la direccion de la variable *y* al apuntador *yPtr*
 
-`yPtr = &y;`  
+```cpp
+yPtr = &y;
+```  
 
 Luego de la ejecucion de esta sentencia se dice que el apuntador *yPtr* apunta a la direccion de la variable *y*.
 
@@ -78,12 +85,16 @@ El operador de direccion no puede ser aplicado a constantes o expresiones
 
 El operador asterisco (*) comunmente conocido como operador de indireccion, devuelve un alias del elemento al cual apunta, por ejemplo la siguiente sentencia:
 
-`cout  <<  *yPtr << endl;`  
+```cpp
+cout  <<  *yPtr << endl;
+```  
 
 Muestra el valor de la variable *y*, el numero entero *5*, similas a como lo haria la siguiente sentencia:
 
-`*yPtr;`  
-`cin >>*yPtr;`  
+```cpp
+*yPtr;  
+cin >>*yPtr;
+```  
 
 ## Codificacion del uso de apuntadores
 
@@ -91,47 +102,64 @@ A continuacion se muestra un programa que opera con apuntadores en [lenguaje C++
 
 Primeramente se importa el archivo de cabecera necesario para usar las sentencias de entrada y salida de informacion
 
-`#include <iostream>`  
-`using std::cout;`  
-`using std::endl;`  
+```cpp
+#include <iostream>  
+using std::cout;  
+using std::endl;
+```  
 
 Luego se define el inicio de la funcion principal:
 
-`int main()`  
+```cpp
+int main()
+```  
 
 A continuacion se declaran variables a usar
 
-`ìnt a;     //a es una variable de tipo entero`  
-`int *aPtr; //aPtr es un apuntador a un entero`  
+```cpp
+ìnt a;     //a es una variable de tipo entero  
+int *aPtr; //aPtr es un apuntador a un entero
+```  
 
 Se asignan los valores correspondientes a las variables declaradas:
 
-`a = 7;    //se le asigna a la variable a el valor entero 7`  
-`aPtr = &a; //al apuntador aPtr se le asigna la direccion de la variable a`  
+```cpp
+a = 7;    //se le asigna a la variable a el valor entero 7  
+aPtr = &a; //al apuntador aPtr se le asigna la direccion de la variable a
+```  
 
 A continuacion se muestran en pantalla los valores asignados a las diferentes variables:
 
 Se muestra en pantalla el valor de la direccion de la variable entera a  
-`cout <<  "La direccion de la variable a es " << &a << endl;`  
+```cpp
+cout <<  "La direccion de la variable a es " << &a << endl;
+```  
 
 Se muestra en pantalla el valor que contiene el aputnador aPtr  
-`cout <<  "El valor de aPtr es " << aPtr << endl;`  
+```cpp
+cout <<  "El valor de aPtr es " << aPtr << endl;
+```  
 
 Se muestra en pantalla el valor de la variable a  
-`cout <<  "El valor de la variable a es " << a << endl;`  
+```cpp
+cout <<  "El valor de la variable a es " << a << endl;
+```  
 
 Se muestra en pantalla el valor apuntado indirectamene por *aPtr  
-`cout <<  "El valor de *aPtr es " << *aPtr << endl;`  
+```cpp
+cout <<  "El valor de *aPtr es " << *aPtr << endl;
+```  
 
 Los operadores de direccion & y de apuntador * son operadores inversos  
-`cout <<  "&*aPtr = " << &*aPtr << endl;`  
-`cout <<  "*&aPtr = " << *&aPtr << endl;`  
+```cpp
+cout <<  "&*aPtr = " << &*aPtr << endl;  
+cout <<  "*&aPtr = " << *&aPtr << endl;
+```  
 
 Note que al ejecutar el codigo indicado, el valor de la direccion de la variable entera *a* es identico al valor contenido en la varialbe *aPtr.
 Los operadores *&* (operador de direccion) y * (operador de apuntador) son operadores inversos, por lo tanto aplicarlos en cualquier orden genera el mismo resultado.
 
 # Referencias
----  
 
 Apuntadores. Definición. Disponible en:  
 http://www.utm.mx/~mgarcia/PE7(Apuntadores).pdf
